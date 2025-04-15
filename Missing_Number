@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n;
+
+
+    cin >> n;
+    int A[n-1];
+    
+    int i;
+
+    for ( i=0; i<n-1; i++ ){
+        cin >> A[i] ;
+    }
+
+    int y = (n*n + n)/2;
+
+    int j = 0;
+
+    for (int k = 0; k <n-1;k++){
+        j += A[k];
+    }
+
+    cout << y - j;
+
+    return 0;
+}
